@@ -1,22 +1,44 @@
+import java.io.Closeable;
+import java.io.File;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
 public class Main {
 
-    public static void Main(String... args) {
-
+    public static void main(String... args)  throws Exception{
         Product apple = new Product(Color.GREEN,  Size.SMALL);
         Product tree = new Product(Color.GREEN,  Size.BIG);
         Product house = new Product(Color.YELLOW,  Size.BIG);
 
         Filter<Product> filter = new GoodFilterImpl();
-        filter.filter(Arrays.asList(apple, tree, house), new ColorSpecification(Color.GREEN));
-        filter.filter(Arrays.asList(apple, tree, house), new SizeSpecification(Size.SMALL));
+        List<Product> products = Arrays.asList(apple, tree, house);
+
+        filter.filter(products, new ColorSpecification(Color.GREEN))
+                .forEach(p -> System.out.println(p.getColor() + "" + p.getSize()));
+
+        filter.filter(Arrays.asList(apple, tree, house), new SizeSpecification(Size.SMALL)).forEach(p -> System.out.println(p));
     }
 }
 
 class Product {
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public Size getSize() {
+        return size;
+    }
+
+    public void setSize(Size size) {
+        this.size = size;
+    }
+
     private Color color;
     private Size size;
 
@@ -43,7 +65,7 @@ class ColorSpecification implements Specification<Product> {
 
     @Override
     public boolean isSatisfied(Product item) {
-        return false;
+        return item.getColor() == color;
     }
 }
 
@@ -56,10 +78,9 @@ class SizeSpecification implements Specification<Product> {
 
     @Override
     public boolean isSatisfied(Product item) {
-        return false;
+        return item.getSize() == size;
     }
 }
-
 
 class GoodFilterImpl implements Filter<Product>{
 

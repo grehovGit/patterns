@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Builder" />
+        <module name="DependenvyInversion" />
+        <module name="Factories" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="Builder" target="1.5" />
+      <module name="DependenvyInversion" target="1.5" />
+      <module name="Factories" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
