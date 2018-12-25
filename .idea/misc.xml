@@ -6,6 +6,17 @@
         <option value="$PROJECT_DIR$/DependenvyInversion/pom.xml" />
         <option value="$PROJECT_DIR$/Builder/pom.xml" />
         <option value="$PROJECT_DIR$/Factories/pom.xml" />
+        <option value="$PROJECT_DIR$/Prototype/pom.xml" />
+        <option value="$PROJECT_DIR$/Signlton/pom.xml" />
+        <option value="$PROJECT_DIR$/Adapter/pom.xml" />
+        <option value="$PROJECT_DIR$/Bridge/pom.xml" />
+        <option value="$PROJECT_DIR$/Composite/pom.xml" />
+        <option value="$PROJECT_DIR$/Decorator/pom.xml" />
+        <option value="$PROJECT_DIR$/Facade/pom.xml" />
+        <option value="$PROJECT_DIR$/Flyweight/pom.xml" />
+        <option value="$PROJECT_DIR$/Proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/ChainResponsibility/pom.xml" />
+        <option value="$PROJECT_DIR$/Command/pom.xml" />
       </list>
     </option>
   </component>

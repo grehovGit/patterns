@@ -6,15 +6,37 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Adapter" />
+        <module name="Bridge" />
         <module name="Builder" />
+        <module name="ChainResponsibility" />
+        <module name="Command" />
+        <module name="Composite" />
+        <module name="Decorator" />
         <module name="DependenvyInversion" />
+        <module name="Facade" />
         <module name="Factories" />
+        <module name="Flyweight" />
+        <module name="Prototype" />
+        <module name="Proxy" />
+        <module name="Signlton" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8">
+    <bytecodeTargetLevel target="9">
+      <module name="Adapter" target="1.5" />
+      <module name="Bridge" target="1.5" />
       <module name="Builder" target="1.5" />
+      <module name="ChainResponsibility" target="1.5" />
+      <module name="Command" target="1.8" />
+      <module name="Composite" target="1.5" />
+      <module name="Decorator" target="1.5" />
       <module name="DependenvyInversion" target="1.5" />
+      <module name="Facade" target="1.5" />
       <module name="Factories" target="1.5" />
+      <module name="Flyweight" target="1.5" />
+      <module name="Prototype" target="1.5" />
+      <module name="Proxy" target="1.5" />
+      <module name="Signlton" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

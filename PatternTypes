@@ -1,0 +1,30 @@
+Creational Design Patterns:
+    Builder
+    Factories
+    Prototype
+    Signlton
+
+Structural Design Patterns:
+    Adapters
+    Bridge
+    Composite
+    Decorator
+    Facade - Exposing several components through a single interface
+    Flyweight - space optimization: Avoid redundancy when storing data
+    Proxy - An interface for accessing a particular resource. A class that
+            functions as an interface to a particular resource. That resource
+            may be remote, expensive to construct, or may require logging or
+            some other added functionality.
+
+    Proxy VS Decorator - Proxy provides an identical interface; decorator provides enhanced interface;
+                         Decorator typically aggregates (or has reference to) what is decorating;
+                         proxy doesn't have to do
+
+    Chain of Responsibility - Sequence of handlers processing an event one after one
+
+    CQS (CQRS) - Command Query Separation. Command - asking for an action or change
+                 Query - asking for info.
+
+    Command - want an object that represents an operation. Then can save commands
+              sequences or undo them.
+
