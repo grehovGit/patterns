@@ -28,3 +28,114 @@ Structural Design Patterns:
     Command - want an object that represents an operation. Then can save commands
               sequences or undo them.
 
+    Interpreter - textual input needs to be processed (turned into OOP structures):
+                  compilers, interpreters, IDEs; HTML, XML, numeric expressions, reg expressions.
+
+                  A component that processes structured text data. Does so by turning it into
+                  separate lexical tokens (lexing) and then interpreting sequences of said
+                  tokens (parsing)
+
+    Iterator - helps to walk over data structures.
+               iterator is a class that facilitates the traversal
+                    - Keeps a reference to the current element
+                    - Knows how to move to a different element
+                    - Iterable for (Foo foo : bar) loops
+
+    Mediator - facilitates communication between other components without them necessarily
+               being aware of each other or having direct (reference) access each other.
+               Components may go in and out of a system at any time
+                 - chat room participants
+                 - players ina an MMORG
+               Make no sense for them to have direct references to one another. Those
+               references may go dead at any time
+
+               Solution: have then all refer to some central component that facilitates communication
+
+
+    Memento - keep a memento of an object's state to return to that state.
+              Bank account gets deposits and withdrawals. Different ways:
+               - record every change (Command) and teach command to 'undo' itself
+               - save snapshots of the system:
+                    A token/handle representing the system state. Let us roll back to
+                    the state when the token was generated. May or may nit directly expose
+                    state information.
+
+
+Behavioral Design Patterns:
+
+    NullObject - When component A uses component B, it typically asssumes that B is not-null
+                 - You inject B, not some Option<B> type
+                 - You don't check for null on every call
+
+                 There is no option of telling A not to use an instance of B.
+                 - Its use is hardcoded.
+
+                 We build a no-op, non-functioning, inheritor, of B(or some interface that
+                 B implements) and pass it into A.
+
+    Observer - We need to be inform when certain things happen
+                - Object's filed changes
+                - Object does something
+                - Some external event occurs
+
+                An observer is an object that wishes to be informed about events happenning
+                in the system. The entity generating the events is an observable.
+
+
+    State - Fun with Finite State Machines.
+            Changes in state can be explicit or in response to event (Observer pattern)
+
+            A pattern in which the object's behavior is determined by its state. An object
+            transitions from one state to another (something needs to trigger a transition)
+
+            A formalized construct which manages state and transitions is called a
+            state machine.
+
+    Strategy - system behavior partially specified at runtime.
+               Many algorithms can be decomposed int higher- and lower- level parts
+               Making tea can be decomposed into:
+                   - process of making a hot beverage(boil water, pour int cup)
+                   - Tea-specific things (put teabag int water)
+
+
+               The high-level algorithm can then be reused for making coffe or hot chocolate
+                   - Supported by beverage-specific strategies
+
+               Enables the exact behavior of a system to be selected either at run-time (dynamic)
+               or comple-time (static)
+               Also known as a 'poplicy'
+
+    Template Method - A high-level blueprint for an algorithm to be completed by inheritors.
+             Algorithms can be decomposed into common parts + specific
+             Strategy pattern does this throug composition:
+                  - High-level algorithm uses an interface
+                  - Concrete implementations implement the interface
+
+             Template Method does the same thing through inheritance
+                  - Overall algorithm makes use of abstract member
+                  - Inheritors override the abstract members
+                  - Parent template method invoked
+
+             Allow us to define the 'skeleton' of the algorithm, with concrete implementations
+             defined in subclasses.
+
+
+    Visitor - allows adding extra behaviors to entire hierarchies of classes.
+              Need to define a new operation on an entire class hierarchy.
+                - make a document model printable to HTML/Markdown
+                - don't want to keep modifying every class in the hierarchy
+                - need access to the non-common aspects of classes int the
+                  hierarchy
+
+                - Create an external component to handle rendering
+                    - but avoid type checks (reflection api)
+
+              A pattern where a component (visitor) is allowed to traverse the
+              entire inheritance hierarchy, Implemented by propagating a
+              single visit() method throughout the entire hierarchy.
+
+
+
+
+
+

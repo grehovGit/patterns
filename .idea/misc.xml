@@ -17,6 +17,14 @@
         <option value="$PROJECT_DIR$/Proxy/pom.xml" />
         <option value="$PROJECT_DIR$/ChainResponsibility/pom.xml" />
         <option value="$PROJECT_DIR$/Command/pom.xml" />
+        <option value="$PROJECT_DIR$/Interpreter/pom.xml" />
+        <option value="$PROJECT_DIR$/Iterable/pom.xml" />
+        <option value="$PROJECT_DIR$/Mediator/pom.xml" />
+        <option value="$PROJECT_DIR$/Observer/pom.xml" />
+        <option value="$PROJECT_DIR$/State/pom.xml" />
+        <option value="$PROJECT_DIR$/Srtategy/pom.xml" />
+        <option value="$PROJECT_DIR$/Template/pom.xml" />
+        <option value="$PROJECT_DIR$/Visitor/pom.xml" />
       </list>
     </option>
   </component>

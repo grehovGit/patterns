@@ -17,9 +17,17 @@
         <module name="Facade" />
         <module name="Factories" />
         <module name="Flyweight" />
+        <module name="Interpreter" />
+        <module name="Iterable" />
+        <module name="Mediator" />
+        <module name="Observer" />
         <module name="Prototype" />
         <module name="Proxy" />
         <module name="Signlton" />
+        <module name="Srtategy" />
+        <module name="State" />
+        <module name="Template" />
+        <module name="Visitor" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="9">
@@ -27,16 +35,24 @@
       <module name="Bridge" target="1.5" />
       <module name="Builder" target="1.5" />
       <module name="ChainResponsibility" target="1.5" />
-      <module name="Command" target="1.8" />
+      <module name="Command" target="1.5" />
       <module name="Composite" target="1.5" />
       <module name="Decorator" target="1.5" />
       <module name="DependenvyInversion" target="1.5" />
       <module name="Facade" target="1.5" />
       <module name="Factories" target="1.5" />
       <module name="Flyweight" target="1.5" />
+      <module name="Interpreter" target="1.5" />
+      <module name="Iterable" target="1.5" />
+      <module name="Mediator" target="1.5" />
+      <module name="Observer" target="1.5" />
       <module name="Prototype" target="1.5" />
       <module name="Proxy" target="1.5" />
       <module name="Signlton" target="1.5" />
+      <module name="Srtategy" target="1.5" />
+      <module name="State" target="1.8" />
+      <module name="Template" target="1.5" />
+      <module name="Visitor" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
